@@ -231,7 +231,7 @@ export function CharityDetails({
       toast({
         title: "Maximum fields selected",
         description: "You can select a maximum of 4 fields for the custom graph.",
-        variant: "warning",
+        variant: "destructive",
       })
       return prev
     })
