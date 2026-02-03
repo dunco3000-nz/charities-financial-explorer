@@ -257,7 +257,7 @@ export async function GET(request: NextRequest) {
          (ar.MaterialExpense2 || 0) + 
          (ar.MaterialExpense3 || 0) + 
          (ar.MaterialExpense4 || 0) + 
-         (ar.AllOtherExpenditure || 0) || 0,
+         (ar.AllOtherExpenditure || 0)) || 0,
       }
     })
 
