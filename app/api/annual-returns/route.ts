@@ -234,7 +234,7 @@ export async function GET(request: NextRequest) {
           (ar.TotalGrossIncome || ar.GrossIncome || 0) - (ar.TotalExpenditure || ar.GrossExpenditure || 0) ||
           0,
         WorkingCapital:
-          ( ar.AllCurrentAssets || (ar.CashAndBankBalances || 0)  + (ar.OtherCurrentAssets || 0)) - ar.AllCurrentLiabilities || 0,
+          ( ar.AllCurrentAssets || (ar.CashAndBankBalances || 0)  + (ar.OtherCurrentAssets || 0)) + (ar.DebtorsAndPrepayments || 0)) + (ar.CashAndShortTermDeposits || 0)) - ar.AllCurrentLiabilities || 0,
         ReportingTier: ar.ReportingTierId || 0,
         CertifiedBy: ar.CertifyingOfficerName || "Not provided",
         DonationsAndGrants: ar.DonationsKoha + ar.AllOtherGrantsAndSponsorship || ar.DonationsKoha || 0,
