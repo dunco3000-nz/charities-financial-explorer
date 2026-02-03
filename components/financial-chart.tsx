@@ -182,4 +182,3 @@ export function FinancialChart({ data, keys, labels, xAxisKey, colors }: Financi
     </div>
   )
 }
-

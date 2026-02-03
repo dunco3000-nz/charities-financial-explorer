@@ -16,4 +16,3 @@ export function formatDate(dateInput: string | Date): string {
 
   return `${day}/${month}/${year}`
 }
-

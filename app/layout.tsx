@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Duncan Digital Charity Financials Explorer",
+  title: "Charity Financials Explorer",
   description: "Search the NZ Charities Register and explore financial information",
   icons: {
     icon: "/favicon.png",
@@ -39,4 +39,3 @@ export default function RootLayout({
     </html>
   )
 }
-

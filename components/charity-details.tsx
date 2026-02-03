@@ -564,4 +564,3 @@ export function CharityDetails({
     </div>
   )
 }
-
